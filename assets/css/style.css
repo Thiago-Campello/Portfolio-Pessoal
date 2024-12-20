@@ -151,7 +151,12 @@ img {
   margin-top: 20px;
   width: 100%;
   height: auto;
-  box-shadow: 1px 1px 10px black;
+  box-shadow: 1px 1px 10px #000;
+  transition: zoom 300ms ease-in-out;
+}
+
+#projects .container .project-wrapper .row .col-img img:hover {
+  box-shadow: 1px 1px 10px #fff;
 }
 
 
