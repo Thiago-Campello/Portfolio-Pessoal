@@ -49,6 +49,11 @@ img {
   margin-bottom: 45px;
 }
 
+.title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
 /*PRESENTATION LAYER*/
 #presentation {
   min-height: 100vh;
@@ -152,7 +157,7 @@ img {
   width: 100%;
   height: auto;
   box-shadow: 1px 1px 10px #000;
-  transition: zoom 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out;
 }
 
 #projects .container .project-wrapper .row .col-img img:hover {
