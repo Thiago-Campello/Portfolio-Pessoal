@@ -29,7 +29,7 @@ Durante o desenvolvimento deste projeto, aprofundei habilidades como:
 ## **Como Visualizar o Projeto**  
 1. Clone este repositório:  
    ```bash
-   https://github.com/Campejo/Portfolio.git
+   https://github.com/Campejo/Portfolio-Pessoal.git
    ```
 2. Abra o arquivo `index.html` em qualquer navegador.
 
