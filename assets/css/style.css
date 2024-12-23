@@ -157,11 +157,14 @@ img {
   width: 100%;
   height: auto;
   box-shadow: 1px 1px 10px #000;
-  transition: box-shadow 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  
 }
 
 #projects .container .project-wrapper .row .col-img img:hover {
   box-shadow: 1px 1px 10px #fff;
+  position: relative;
+  top: -5px;
 }
 
 
@@ -187,7 +190,43 @@ img {
   padding: 20px;
 }
 
+/* FOOTER LAYER */
+#footer {
+  height: 20vh;
+  width: 100%;
+  justify-self: center;
+  padding: 0 2rem;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#footer .footer-wrapper {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  gap: 20px;
+  border-bottom: 0.25px solid #fff;
+  padding: 20px 0;
+}
+
+#footer img {
+  width: 2.2rem;
+  transition: all 300ms ease-in-out;
+}
+
+#footer img:hover {
+  position: relative;
+  top: -5px;
+}
+
 @media (min-width: 1024px) {
+  #presentation .container h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
   #about {
     height: 93vh;
     padding: 0 5.6rem;
@@ -233,5 +272,18 @@ img {
 
   #contact {
     height: 40vh;
+  }
+
+  #projects .container .project-wrapper .row .col-img img:hover {
+    top: -15px;
+  }
+
+  #footer .footer-wrapper {
+    width: 20%;
+    padding: 20px 0;
+  }
+  
+  #footer img {
+    width: 2.5rem;
   }
 }
