@@ -99,8 +99,8 @@ img {
 
 #about .container .about-wrapper .about-wrapper-image .img-fluid {
   height: auto;
-  width: 200px;
-  border-radius: 12px;
+  width: 300px;
+  border-radius: 50%;
 }
 
 #about .container .about-wrapper .about-wrapper-info {
@@ -164,7 +164,7 @@ img {
 #projects .container .project-wrapper .row .col-img img:hover {
   box-shadow: 1px 1px 10px #fff;
   position: relative;
-  top: -5px;
+  top: -3px;
 }
 
 
@@ -245,7 +245,7 @@ img {
 
   #about .container .about-wrapper .about-wrapper-image .img-fluid {
     height: auto;
-    width: 200px;
+    width: 320px;
   }
 
   #about .container .about-wrapper .about-wrapper-info {
