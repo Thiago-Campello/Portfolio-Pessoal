@@ -44,6 +44,6 @@ Durante o desenvolvimento deste projeto, aprofundei habilidades como:
 
 ## **Autor**  
 Desenvolvido por [Thiago Campello](https://github.com/Campejo).  
-Entre em contato: [campellothiago@hotmail.com](mailto:campellothiago@hotmail.com).  
+Entre em contato: [campellthiago@gmail.com](mailto:campellthiago@gmail.com).  
 
 ---
