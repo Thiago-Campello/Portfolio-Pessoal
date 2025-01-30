@@ -1,605 +1,623 @@
+:root {
+    --primary-color: #2E3A59; /* Azul Marinho */
+    --secondary-color: #00BFA5; /* Verde Água */
+    --background-color: #F5F5F5; /* Cinza Claro */
+    --text-color: #333333; /* Cinza Escuro */
+    --accent-color: #FF6F00; /* Laranja */
+  }
+
+/* Reset e Configurações Globais */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: sans-serif;
-  background-color: #2d2424;
-  color: #e0c097;
-  line-height: 40px;
-}
-
-a {
-  text-decoration: none;
-  color: #b85c38;
-}
-
-img {
-  vertical-align: middle;
-}
-
-.btn {
-  border: 1px solid #b85c38;
-  border-radius: 8px;
-  padding: 8px;
-  font-size: 12px;
-  transition: all 300ms ease-in-out;
-}
-
-.btn:hover {
-  background: #b85c38b4;
-  color: #e0c097;
-  border: 1px solid #e0c097;
-  font-weight: 500;
-}
-
-.container {
-  width: 100%;
-  max-width: 100%;
-}
-
-.section-title {
-  text-transform: uppercase;
-  font-size: 1.3em;
-  margin-bottom: 25px;
-}
-
-.title {
-  font-weight: bold;
-  font-size: 1em;
-}
-
-/*PRESENTATION LAYER*/
-#presentation {
-  min-height: 100vh;
-  height: 100vh;
-  width: 100%;
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  font-weight: 400;
-  padding: 0 0.5rem;
-  text-align: center;
-}
-
-#presentation .container h1 {
-  font-size: 1.3em;
-  line-height: 1.1em;
-  margin-bottom: 30px;
-}
-
-#presentation .container h1 span {
-  color: #b85c38;
-}
-
-/*ABOUT LAYER*/
-#about {
-  height: 100vh;
-  width: 100%;
-  max-width: 100%;
-  justify-self: center;
-  font-weight: 400;
-  padding: 1rem 2rem;
-  text-align: center;
-  background: #332929;
-}
-
-#about .container .about-wrapper {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  justify-self: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-#about .container .about-wrapper .about-wrapper-image .img-fluid {
-  height: auto;
-  width: 180px;
-  border-radius: 50%;
-}
-
-#about .container .about-wrapper .about-wrapper-info {
-  font-size: 0.9em;
-  align-self: center;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  line-height: 2rem;
-  letter-spacing: 1.3px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-/* PROJECTS LAYER */
-#projects {
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  justify-self: center;
-  font-weight: 400;
-  padding: 1rem 2rem;
-  text-align: center;
-}
-
-#projects .container .project-wrapper {
-  display: block;
-  width: 100%;
-  justify-content: center;
-  justify-self: center;
-}
-
-#projects .container .project-wrapper .row {
-  width: 100%;
-  display: flex;
-  justify-self: center;
-  flex-wrap: wrap;
-  margin-bottom: 6rem;
-}
-
-#projects .container .project-wrapper .row .col-text {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 10px;
-  text-align: start;
-}
-
-#projects .container .project-wrapper .row .col-text p {
-  margin-bottom: 15px;
-  line-height: 1.5rem;
-  font-size: 0.9em;
-}
-
-#projects .container .project-wrapper .row .col-img img {
-  margin-top: 20px;
-  width: 100%;
-  height: auto;
-  box-shadow: 1px 1px 10px #000;
-  transition: all 300ms ease-in-out;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   
-}
-
-#projects .container .project-wrapper .row .col-img img:hover {
-  box-shadow: 1px 1px 10px #fff;
-  position: relative;
-  top: -3px;
-}
-
-
-/* CONTACT LAYER */
-#contact {
-  height: auto;
-  width: 100%;
-  max-width: 100%;
-  justify-self: center;
-  font-weight: 400;
-  padding: 1rem 2rem;
-  text-align: center;
-  background: #332929;
-}
-
-#contact .container .contact-wrapper {
-  display: flex;
-  width: 40%;
-  justify-self: center;
-  gap: 30px;
-  flex-direction: column;
-  align-items: center;
-}
-
-#contact .container .contact-wrapper p {
-  font-size: 1.1em;
-  letter-spacing: 1px;
-}
-
-#contact .container .contact-wrapper span {
-  width: 100%;
-}
-
-#contact .container .contact-wrapper a {
-  font-size: 12px;
-}
-
-/* FOOTER LAYER */
-#footer {
-  height: 20vh;
-  width: 100%;
-  justify-self: center;
-  padding: 1rem 2rem;
-  text-align: center;
-}
-
-#footer .footer-wrapper {
-  display: flex;
-  justify-self: center;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  gap: 20px;
-  border-bottom: 0.25px solid #fff;
-  padding: 0.5rem 0;
-}
-
-#footer img {
-  width: 1.8rem;
-  transition: all 300ms ease-in-out;
-}
-
-#footer img:hover {
-  position: relative;
-  top: -0.3rem;
-}
-
-@media (min-width: 412px) and (max-width: 767px) {
-  /* Estilos para Moto G Power */
-  .btn {
-    font-size: 14px;
+  html {
+    scroll-behavior: smooth;
   }
-
+  
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 40px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Botões */
+  .btn {
+    border: none;
+    padding: 0.6rem;
+    font-size: 12px;
+    color: #FFFFFF;
+    background-color: var(--secondary-color);
+    transition: all 300ms ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+  }
+  
+  /* Container */
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Títulos de Seção */
   .section-title {
+    text-transform: uppercase;
     font-size: 1.3em;
+    margin-bottom: 25px;
   }
-
-  #presentation .container h1 {
-    font-size: 1.4em;
-    line-height: 1.1em;
-    margin-bottom: 30px;
-  }
-
-  #about .container .about-wrapper .about-wrapper-info {
-    gap: 30px;
-  } 
-
-  #about .container .about-wrapper .about-wrapper-info p {
-    font-size: 1em;
-  }
-
-  #about .container .about-wrapper .about-wrapper-image .img-fluid {
-    width: 200px;
-  }
-
+  
   .title {
+    font-weight: bold;
     font-size: 1em;
   }
-
-  #projects .container .project-wrapper .row .col-text p {
-    font-size: 0.8em;
+  
+  /* Seção de Apresentação */
+  #presentation {
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    padding: 0 0.5rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
   }
-
-  #contact .container .contact-wrapper p {
-    font-size: 1.2em;
-  }
-
-  #contact .container .contact-wrapper a {
-    font-size: 14px;
-  }
-
-  #footer {
-    padding-top: 2rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Estilos para iPad Mini (Paisagem) */
-  .btn {
-    font-size: 18px;
-  }
-
-  .section-title {
-    font-size: 1.7em;
-  }
-
+  
   #presentation .container h1 {
-    font-size: 3em;
+    font-size: 1.3em;
     line-height: 1.1em;
     margin-bottom: 30px;
   }
-
-  #about .container .about-wrapper .about-wrapper-info {
-    gap: 40px;
-    padding: 0 4em;
+  
+  #presentation .container h1 span {
+    color: #D4AF37;
   }
-
-  #about .container .about-wrapper .about-wrapper-info p {
-    font-size: 1.2em;
-    line-height: 1.3em;
-    letter-spacing: 1.5px;
-    text-align: justify;
+  
+  /* Seção Sobre Mim */
+  #about {
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: var(--background-color);
   }
-
+  
+  #about .container .about-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
   #about .container .about-wrapper .about-wrapper-image .img-fluid {
-    width: 280px;
+    height: auto;
+    width: 180px;
+    border-radius: 50%;
   }
-
+  
+  #about .container .about-wrapper .about-wrapper-info {
+    font-size: 0.9em;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    line-height: 2rem;
+    letter-spacing: 1.3px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Seção de Projetos */
+  #projects {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: #ffffff;
+    color: var(--text-color);
+  }
+  
+  #projects .container .project-wrapper {
+    display: block;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  #projects .container .project-wrapper .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
+  }
+  
+  #projects .container .project-wrapper .row .col-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    text-align: start;
+  }
+  
   #projects .container .project-wrapper .row .col-text p {
+    margin-bottom: 15px;
+    line-height: 1.5rem;
+    font-size: 0.9em;
+  }
+  
+  #projects .container .project-wrapper .row .col-img img {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 1px 10px #000;
+    transition: all 300ms ease-in-out;
+  }
+  
+  #projects .container .project-wrapper .row .col-img img:hover {
+    position: relative;
+    top: -3px;
+  }
+  
+  /* Seção de Contato */
+  #contact {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+  }
+  
+  #contact .container .contact-wrapper {
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #contact .container .contact-wrapper p {
     font-size: 1.1em;
     letter-spacing: 1px;
   }
-
-  #projects .container .project-wrapper .row .col-img img {
-    max-width: 80%;
-  }
-
-  #contact .container .contact-wrapper p {
-    font-size: 1.4em;
+  
+  #contact .container .contact-wrapper span {
+    width: 100%;
   }
   
   #contact .container .contact-wrapper a {
-    font-size: 18px;
-  }
-
-  #footer {
-    padding-top: 2em;
-  }
-
-  #footer img {
-    width: 2.2rem;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1279px) {
-  /* Estilos para iPad Air (Paisagem) */
-  .btn {
-    font-size: 20px;
-  }
-
-  .section-title {
-    font-size: 1.6em;
-  }
-
-  #presentation .container h1 {
-    font-size: 3em;
-    line-height: 1.1em;
-    margin-bottom: 40px;
-  }
-
-  #about .container .about-wrapper .about-wrapper-info {
-    gap: 40px;
-    padding: 0 10em;
-  }
-
-  #about .container .about-wrapper .about-wrapper-info p {
-    font-size: 1.3em;
-    line-height: 1.3em;
-    letter-spacing: 1px;
-    text-align: justify;
-  }
-
-  #about .container .about-wrapper .about-wrapper-image .img-fluid {
-    width: 300px;
-  }
-
-  .title {
-    font-size: 1.2em;
-  }
-
-  #projects .container .project-wrapper .row .col-text p {
-    font-size: 1em;
-    letter-spacing: 1px;
-  }
-
-  #projects .container .project-wrapper .row .col-img img {
-    max-width: 50%;
-  }
-
-  #contact .container .contact-wrapper p {
-    font-size: 1.5em;
+    font-size: 12px;
   }
   
-  #contact .container .contact-wrapper a {
-    font-size: 20px;
-  }
-
+  /* Rodapé */
   #footer {
-    padding-top: 2em;
-  }
-
-  #footer img {
-    width: 2rem;
-  }
-}
-
-@media (min-width: 1280px) and (max-width: 1439px) {
-  /* Estilos para iPad Pro (Paisagem) */
-  .btn {
-    font-size: 22px;
-  }
-
-  .section-title {
-    font-size: 2.2em;
-  }
-
-  #presentation .container h1 {
-    font-size: 3.5em;
-    line-height: 1.1em;
-    margin-bottom: 40px;
-  }
-
-  #about .container .about-wrapper .about-wrapper-info {
-    gap: 40px;
-    padding: 0 10em;
-  }
-
-  #about .container .about-wrapper .about-wrapper-info p {
-    font-size: 1.6em;
-    line-height: 1.3em;
-    letter-spacing: 1px;
-    text-align: justify;
-  }
-
-  #about .container .about-wrapper .about-wrapper-image .img-fluid {
-    width: 330px;
-  }
-
-  .title {
-    font-size: 1.4em;
-  }
-
-  #projects .container .project-wrapper .row .col-text p {
-    font-size: 1.2em;
-    letter-spacing: 1px;
-  }
-
-  #projects .container .project-wrapper .row .col-img img {
-    max-width: 50%;
-  }
-
-  #contact .container .contact-wrapper p {
-    font-size: 1.8em;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    text-align: center;
   }
   
-  #contact .container .contact-wrapper a {
-    font-size: 24px;
-  }
-
-  #footer {
-    padding-top: 4em;
-  }
-
-  #footer img {
-    width: 2.6rem;
-  }
-}
-
-@media (min-width: 1440px) and (max-width: 1919px) {
-  /* Estilos para 1440 x 1080 */
-  .btn {
-    font-size: 25px;
-  }
-
-  .section-title {
-    font-size: 2.5em;
-    margin-bottom: 5rem;
-  }
-
-  #presentation .container h1 {
-    font-size: 4.2em;
-    line-height: 1.1em;
-    margin-bottom: 40px;
-  }
-
-  #about .container .about-wrapper .about-wrapper-info {
-    gap: 40px;
-    padding: 0 14em;
-  }
-
-  #about .container .about-wrapper .about-wrapper-info p {
-    font-size: 1.6em;
-    line-height: 1.3em;
-    letter-spacing: 1px;
-    text-align: justify;
-  }
-
-  #about .container .about-wrapper .about-wrapper-image .img-fluid {
-    width: 350px;
-  }
-
-  .title {
-    font-size: 1.9em;
-  }
-
-  #projects .container .project-wrapper .row .col-text p {
-    font-size: 1.5em;
-    letter-spacing: 1px;
-  }
-
-  #projects .container .project-wrapper .row .col-img img {
-    max-width: 50%;
-  }
-
-  #contact .container .contact-wrapper {
-    gap: 4.5rem;
-  }
-
-  #contact .container .contact-wrapper p {
-    font-size: 2.6em;
+  #footer .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 0 auto;
+    gap: 20px;
+    border-bottom: 0.25px solid var(--text-color);
+    padding: 0.5rem 0;
   }
   
-  #contact .container .contact-wrapper a {
-    font-size: 28px;
-  }
-
-  #footer {
-    padding-top: 4em;
-  }
-
   #footer img {
-    width: 2.9rem;
-  }
-}
-
-@media (min-width: 1920px) {
-  /* Estilos para 1920px+ */
-  .btn {
-    font-size: 25px;
-  }
-
-  .section-title {
-    font-size: 2.5em;
-    margin-bottom: 5rem;
-  }
-
-  #presentation .container h1 {
-    font-size: 4.5em;
-    line-height: 1.1em;
-    margin-bottom: 40px;
-  }
-
-  #about .container .about-wrapper .about-wrapper-info {
-    gap: 40px;
-    padding: 0 18rem;
-  }
-
-  #about .container .about-wrapper .about-wrapper-info p {
-    font-size: 1.8em;
-    line-height: 1.3em;
-    letter-spacing: 1px;
-    text-align: justify;
-  }
-
-  #about .container .about-wrapper .about-wrapper-image .img-fluid {
-    width: 350px;
-  }
-
-  .title {
-    font-size: 1.7em;
-  }
-
-  #projects .container .project-wrapper .row .col-text p {
-    font-size: 1.4em;
-    letter-spacing: 1px;
-  }
-
-  #projects .container .project-wrapper .row .col-img img {
-    max-width: 70%;
-  }
-
-  #contact .container .contact-wrapper {
-    gap: 4.5rem;
-  }
-
-  #contact .container .contact-wrapper p {
-    font-size: 2.6em;
+    width: 1.8rem;
+    transition: all 300ms ease-in-out;
   }
   
-  #contact .container .contact-wrapper a {
-    font-size: 28px;
+  #footer img:hover {
+    position: relative;
+    top: -0.3rem;
   }
+  
+  /* Media Queries para Responsividade */
+  @media (min-width: 412px) and (max-width: 767px) {
+    .btn {
+      font-size: 14px;
+    }
+  
+    .section-title {
+      font-size: 1.3em;
+    }
+  
+    #presentation .container h1 {
+      font-size: 1.4em;
+      line-height: 1.1em;
+      margin-bottom: 30px;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-info {
+      gap: 30px;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-info p {
+      font-size: 1em;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-image .img-fluid {
+      width: 200px;
+    }
+  
+    .title {
+      font-size: 1em;
+    }
+  
+    #projects .container .project-wrapper .row .col-text p {
+      font-size: 0.8em;
+    }
+  
+    #contact .container .contact-wrapper p {
+      font-size: 1.2em;
+    }
+  
+    #contact .container .contact-wrapper a {
+      font-size: 14px;
+    }
+  
+    #footer {
+      padding-top: 2rem;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .btn {
+      font-size: 18px;
+    }
+  
+    .section-title {
+      font-size: 1.7em;
+    }
+  
+    #presentation .container h1 {
+      font-size: 3em;
+      line-height: 1.1em;
+      margin-bottom: 30px;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-info {
+      gap: 40px;
+      padding: 0 4em;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-info p {
+      font-size: 1.2em;
+      line-height: 1.3em;
+      letter-spacing: 1.5px;
+      text-align: justify;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-image .img-fluid {
+      width: 280px;
+    }
+  
+    #projects .container .project-wrapper .row .col-text p {
+      font-size: 1.1em;
+      letter-spacing: 1px;
+    }
+  
+    #projects .container .project-wrapper .row .col-img img {
+      max-width: 80%;
+    }
+  
+    #contact .container .contact-wrapper p {
+      font-size: 1.4em;
+    }
+  
+    #contact .container .contact-wrapper a {
+      font-size: 18px;
+    }
+  
+    #footer {
+      padding-top: 2em;
+    }
+  
+    #footer img {
+      width: 2.2rem;
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1279px) {
+    .btn {
+      font-size: 20px;
+    }
+  
+    .section-title {
+      font-size: 1.6em;
+    }
+  
+    #presentation .container h1 {
+      font-size: 3em;
+      line-height: 1.1em;
+      margin-bottom: 40px;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-info {
+      gap: 40px;
+      padding: 0 10em;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-info p {
+      font-size: 1.3em;
+      line-height: 1.3em;
+      letter-spacing: 1px;
+      text-align: justify;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-image .img-fluid {
+      width: 300px;
+    }
+  
+    .title {
+      font-size: 1.2em;
+    }
+  
+    #projects .container .project-wrapper .row .col-text p {
+      font-size: 1em;
+      letter-spacing: 1px;
+    }
+  
+    #projects .container .project-wrapper .row .col-img img {
+      max-width: 50%;
+    }
+  
+    #contact .container .contact-wrapper p {
+      font-size: 1.5em;
+    }
+  
+    #contact .container .contact-wrapper a {
+      font-size: 20px;
+    }
+  
+    #footer {
+      padding-top: 2em;
+    }
+  
+    #footer img {
+      width: 2rem;
+    }
+  }
+  
+  @media (min-width: 1280px) and (max-width: 1439px) {
+    .btn {
+      font-size: 22px;
+    }
+  
+    .section-title {
+      font-size: 2.2em;
+    }
+  
+    #presentation .container h1 {
+      font-size: 3.5em;
+      line-height: 1.1em;
+      margin-bottom: 40px;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-info {
+      gap: 40px;
+      padding: 0 10em;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-info p {
+      font-size: 1.6em;
+      line-height: 1.3em;
+      letter-spacing: 1px;
+      text-align: justify;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-image .img-fluid {
+      width: 330px;
+    }
+  
+    .title {
+      font-size: 1.4em;
+    }
+  
+    #projects .container .project-wrapper .row .col-text p {
+      font-size: 1.2em;
+      letter-spacing: 1px;
+    }
+  
+    #projects .container .project-wrapper .row .col-img img {
+      max-width: 50%;
+    }
+  
+    #contact .container .contact-wrapper p {
+      font-size: 1.8em;
+    }
+  
+    #contact .container .contact-wrapper a {
+      font-size: 24px;
+    }
+  
+    #footer {
+      padding-top: 4em;
+    }
+  
+    #footer img {
+      width: 2.6rem;
+    }
+  }
+  
+  @media (min-width: 1440px) and (max-width: 1919px) {
+    .btn {
+      font-size: 25px;
+    }
+  
+    .section-title {
+      font-size: 2.5em;
+      margin-bottom: 5rem;
+    }
+  
+    #presentation .container h1 {
+      font-size: 4.2em;
+      line-height: 1.1em;
+      margin-bottom: 40px;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-info {
+      gap: 40px;
+      padding: 0 14em;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-info p {
+      font-size: 1.6em;
+      line-height: 1.3em;
+      letter-spacing: 1px;
+      text-align: justify;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-image .img-fluid {
+      width: 350px;
+    }
+  
+    .title {
+      font-size: 1.9em;
+    }
+  
+    #projects .container .project-wrapper .row .col-text p {
+      font-size: 1.5em;
+      letter-spacing: 1px;
+    }
+  
+    #projects .container .project-wrapper .row .col-img img {
+      max-width: 50%;
+    }
+  
+    #contact .container .contact-wrapper {
+      gap: 4.5rem;
+    }
+  
+    #contact .container .contact-wrapper p {
+      font-size: 2.6em;
+    }
+  
+    #contact .container .contact-wrapper a {
+      font-size: 28px;
+    }
+  
+    #footer {
+      padding-top: 4em;
+    }
+  
+    #footer img {
+      width: 2.9rem;
+    }
+  }
+  
+  @media (min-width: 1920px) {
+    .btn {
+      font-size: 1.2rem;
+    }
+  
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 5rem;
+    }
+  
+    #presentation .container h1 {
+      font-size: 4rem;
+      line-height: 4.5rem;
+      margin-bottom: 4rem;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-info {
+      gap: 4rem;
+      padding: 0 30rem;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-info p {
+      font-size: 1.6rem;
+      line-height: 2rem;
+      letter-spacing: 0.2rem;
+      text-align: justify;
+    }
+  
+    #about .container .about-wrapper .about-wrapper-image .img-fluid {
+      width: 20rem;
+    }
+  
+    .title {
+      font-size: 1.7rem;
+    }
 
-  #footer {
-    padding-top: 4em;
-  }
+    #projects .container .project-wrapper .row {
+        flex-wrap: nowrap; 
+        gap: 10rem;   
+    }
 
-  #footer img {
-    width: 2.9rem;
+    #projects .container .project-wrapper .row .col-text p {
+      font-size: 1.4rem;
+      letter-spacing: 0.1rem;
+    }
+  
+    #projects .container .project-wrapper .row .col-img img {
+      max-width: 100rem;
+      margin: 0;
+    }
+  
+    #contact .container .contact-wrapper {
+      gap: 4.5rem;
+    }
+  
+    #contact .container .contact-wrapper p {
+      font-size: 2.6em;
+    }
+  
+    #contact .container .contact-wrapper a {
+      font-size: 28px;
+    }
+  
+    #footer {
+      padding-top: 4em;
+    }
+  
+    #footer img {
+      width: 2.9rem;
+    }
   }
-}
