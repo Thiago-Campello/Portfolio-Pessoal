@@ -41,8 +41,7 @@ Durante o desenvolvimento deste projeto, aprofundei habilidades como:
 
 ## **Próximos Passos**  
 - Adicionar interatividade utilizando JavaScript.  
-- Melhorar a acessibilidade da página.  
-- Publicar o portfólio utilizando uma plataforma como GitHub Pages ou Vercel.  
+- Melhorar a acessibilidade da página.
 
 ---
 
