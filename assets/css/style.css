@@ -1,623 +1,619 @@
 :root {
-    --primary-color: #2E3A59; /* Azul Marinho */
-    --secondary-color: #00BFA5; /* Verde Água */
-    --background-color: #F5F5F5; /* Cinza Claro */
-    --text-color: #333333; /* Cinza Escuro */
-    --accent-color: #FF6F00; /* Laranja */
-  }
+  --primary-color: #2E3A59; /* Azul Marinho */
+  --secondary-color: #00BFA5; /* Verde Água */
+  --background-color: #F5F5F5; /* Cinza Claro */
+  --text-color: #333333; /* Cinza Escuro */
+  --accent-color: #FF6F00; /* Laranja */
+}
 
 /* Reset e Configurações Globais */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Botões */
+.btn {
+  border: none;
+  padding: 0.6rem;
+  font-size: 12px;
+  color: #FFFFFF;
+  background-color: var(--secondary-color);
+  transition: all 300ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Títulos de Seção */
+.section-title {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  margin-bottom: 25px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/* Seção de Apresentação */
+#presentation {
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  padding: 0 0.5rem;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+#presentation .container h1 {
+  font-size: 1.3em;
+  line-height: 1.1em;
+  margin-bottom: 30px;
+}
+
+#presentation .container h1 span {
+  color: #D4AF37;
+}
+
+/* Seção Sobre Mim */
+#about {
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+#about .container .about-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#about .container .about-wrapper .about-wrapper-image .img-fluid {
+  height: auto;
+  width: 180px;
+  border-radius: 50%;
+}
+
+#about .container .about-wrapper .about-wrapper-info {
+  font-size: 0.9em;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  line-height: 2rem;
+  letter-spacing: 1.3px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Seção de Projetos */
+#projects {
+  max-width: 100%; width: 100%;
+  height: 100%;
+  padding: 3rem 1rem;
+  justify-items: center;
+  background-color: #ffffff;
+}
+
+#projects .container-projetos {
+  width: 100%;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#projects .container-projetos .col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 90vh;
+  padding: 0.5rem 2rem;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem var(--primary-color);
+  background-color: var(--background-color);
+}
+
+#projects .container-projetos .col h3 {
+  font-size: 1.5rem;
+  height: 2%;
+}
+
+#projects .container-projetos .col img {
+  aspect-ratio: 16/9;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 2rem 0;
+  box-shadow: 0 0 0.5rem var(--text-color);
+}
+
+#projects .container-projetos .col p {
+  height: 50%;
+  font-size: 1rem;
+}
   
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 40px;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  img {
-    vertical-align: middle;
-  }
-  
-  /* Botões */
+
+/* Seção de Contato */
+#contact {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+#contact .container .contact-wrapper {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact .container .contact-wrapper p {
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+
+#contact .container .contact-wrapper span {
+  width: 100%;
+}
+
+/* Rodapé */
+#footer {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+#footer .footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin: 0 auto;
+  gap: 20px;
+  border-bottom: 0.25px solid var(--text-color);
+  padding: 0.5rem 0;
+}
+
+#footer img {
+  width: 1.8rem;
+  transition: all 300ms ease-in-out;
+}
+
+#footer img:hover {
+  position: relative;
+  top: -0.3rem;
+}
+
+/* Media Queries para Responsividade */
+@media (min-width: 412px) and (max-width: 767px) {
   .btn {
-    border: none;
-    padding: 0.6rem;
-    font-size: 12px;
-    color: #FFFFFF;
-    background-color: var(--secondary-color);
-    transition: all 300ms ease-in-out;
+    font-size: 14px;
   }
-  
-  .btn:hover {
-    background-color: var(--accent-color);
-    color: #FFFFFF;
-  }
-  
-  /* Container */
-  .container {
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  /* Títulos de Seção */
+
   .section-title {
-    text-transform: uppercase;
     font-size: 1.3em;
-    margin-bottom: 25px;
   }
-  
-  .title {
-    font-weight: bold;
-    font-size: 1em;
-  }
-  
-  /* Seção de Apresentação */
-  #presentation {
-    min-height: 100vh;
-    height: 100vh;
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 400;
-    padding: 0 0.5rem;
-    text-align: center;
-    background-color: var(--primary-color);
-    color: #ffffff;
-  }
-  
+
   #presentation .container h1 {
-    font-size: 1.3em;
+    font-size: 1.4em;
     line-height: 1.1em;
     margin-bottom: 30px;
   }
-  
-  #presentation .container h1 span {
-    color: #D4AF37;
-  }
-  
-  /* Seção Sobre Mim */
-  #about {
-    height: 100vh;
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 400;
-    padding: 1rem 2rem;
-    text-align: center;
-    background-color: var(--background-color);
-  }
-  
-  #about .container .about-wrapper {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
-  
-  #about .container .about-wrapper .about-wrapper-image .img-fluid {
-    height: auto;
-    width: 180px;
-    border-radius: 50%;
-  }
-  
+
   #about .container .about-wrapper .about-wrapper-info {
-    font-size: 0.9em;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    line-height: 2rem;
-    letter-spacing: 1.3px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  /* Seção de Projetos */
-  #projects {
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    font-weight: 400;
-    padding: 1rem 2rem;
-    text-align: center;
-    background-color: #ffffff;
-    color: var(--text-color);
-  }
-  
-  #projects .container .project-wrapper {
-    display: block;
-    width: 100%;
-    justify-content: center;
-  }
-  
-  #projects .container .project-wrapper .row {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 6rem;
-  }
-  
-  #projects .container .project-wrapper .row .col-text {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-    text-align: start;
-  }
-  
-  #projects .container .project-wrapper .row .col-text p {
-    margin-bottom: 15px;
-    line-height: 1.5rem;
-    font-size: 0.9em;
-  }
-  
-  #projects .container .project-wrapper .row .col-img img {
-    margin-top: 20px;
-    width: 100%;
-    height: auto;
-    box-shadow: 1px 1px 10px #000;
-    transition: all 300ms ease-in-out;
-  }
-  
-  #projects .container .project-wrapper .row .col-img img:hover {
-    position: relative;
-    top: -3px;
-  }
-  
-  /* Seção de Contato */
-  #contact {
-    height: auto;
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    font-weight: 400;
-    padding: 1rem 2rem;
-    text-align: center;
-    background-color: var(--primary-color);
-    color: #ffffff;
-  }
-  
-  #contact .container .contact-wrapper {
-    display: flex;
-    width: 40%;
-    margin: 0 auto;
-    justify-content: center;
     gap: 30px;
-    flex-direction: column;
-    align-items: center;
   }
-  
+
+  #about .container .about-wrapper .about-wrapper-info p {
+    font-size: 1em;
+  }
+
+  #about .container .about-wrapper .about-wrapper-image .img-fluid {
+    width: 200px;
+  }
+
+  .title {
+    font-size: 1em;
+  }
+
+
   #contact .container .contact-wrapper p {
-    font-size: 1.1em;
-    letter-spacing: 1px;
+    font-size: 1.2em;
   }
-  
-  #contact .container .contact-wrapper span {
-    width: 100%;
-  }
-  
-  #contact .container .contact-wrapper a {
-    font-size: 12px;
-  }
-  
-  /* Rodapé */
+
   #footer {
-    height: 20vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .btn {
+    font-size: 18px;
+  }
+
+  .section-title {
+    font-size: 1.7em;
+  }
+
+  #presentation .container h1 {
+    font-size: 3em;
+    line-height: 1.1em;
+    margin-bottom: 30px;
+  }
+
+  #about .container .about-wrapper .about-wrapper-info {
+    gap: 40px;
+    padding: 0 4em;
+  }
+
+  #about .container .about-wrapper .about-wrapper-info p {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+    text-align: justify;
+  }
+
+  #about .container .about-wrapper .about-wrapper-image .img-fluid {
+    width: 280px;
+  }
+
+  #projects {
+    padding: 3rem 5rem;
+  }
+
+
+  #projects .container-projetos .col {
+    width: 70%;
     padding: 1rem 2rem;
-    text-align: center;
   }
-  
-  #footer .footer-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    margin: 0 auto;
-    gap: 20px;
-    border-bottom: 0.25px solid var(--text-color);
-    padding: 0.5rem 0;
+
+  #projects .container-projetos .col p {
+    height: 50%;
+    font-size: 1.1rem;
+    letter-spacing: 0.06rem;
   }
-  
+
+  #contact .container .contact-wrapper p {
+    font-size: 1.4em;
+  }
+
+  #footer {
+    padding-top: 2em;
+  }
+
   #footer img {
-    width: 1.8rem;
-    transition: all 300ms ease-in-out;
+    width: 2.2rem;
   }
-  
-  #footer img:hover {
-    position: relative;
-    top: -0.3rem;
-  }
-  
-  /* Media Queries para Responsividade */
-  @media (min-width: 412px) and (max-width: 767px) {
-    .btn {
-      font-size: 14px;
-    }
-  
-    .section-title {
-      font-size: 1.3em;
-    }
-  
-    #presentation .container h1 {
-      font-size: 1.4em;
-      line-height: 1.1em;
-      margin-bottom: 30px;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-info {
-      gap: 30px;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-info p {
-      font-size: 1em;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-image .img-fluid {
-      width: 200px;
-    }
-  
-    .title {
-      font-size: 1em;
-    }
-  
-    #projects .container .project-wrapper .row .col-text p {
-      font-size: 0.8em;
-    }
-  
-    #contact .container .contact-wrapper p {
-      font-size: 1.2em;
-    }
-  
-    #contact .container .contact-wrapper a {
-      font-size: 14px;
-    }
-  
-    #footer {
-      padding-top: 2rem;
-    }
-  }
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .btn {
-      font-size: 18px;
-    }
-  
-    .section-title {
-      font-size: 1.7em;
-    }
-  
-    #presentation .container h1 {
-      font-size: 3em;
-      line-height: 1.1em;
-      margin-bottom: 30px;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-info {
-      gap: 40px;
-      padding: 0 4em;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-info p {
-      font-size: 1.2em;
-      line-height: 1.3em;
-      letter-spacing: 1.5px;
-      text-align: justify;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-image .img-fluid {
-      width: 280px;
-    }
-  
-    #projects .container .project-wrapper .row .col-text p {
-      font-size: 1.1em;
-      letter-spacing: 1px;
-    }
-  
-    #projects .container .project-wrapper .row .col-img img {
-      max-width: 80%;
-    }
-  
-    #contact .container .contact-wrapper p {
-      font-size: 1.4em;
-    }
-  
-    #contact .container .contact-wrapper a {
-      font-size: 18px;
-    }
-  
-    #footer {
-      padding-top: 2em;
-    }
-  
-    #footer img {
-      width: 2.2rem;
-    }
-  }
-  
-  @media (min-width: 1025px) and (max-width: 1279px) {
-    .btn {
-      font-size: 20px;
-    }
-  
-    .section-title {
-      font-size: 1.6em;
-    }
-  
-    #presentation .container h1 {
-      font-size: 3em;
-      line-height: 1.1em;
-      margin-bottom: 40px;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-info {
-      gap: 40px;
-      padding: 0 10em;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-info p {
-      font-size: 1.3em;
-      line-height: 1.3em;
-      letter-spacing: 1px;
-      text-align: justify;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-image .img-fluid {
-      width: 300px;
-    }
-  
-    .title {
-      font-size: 1.2em;
-    }
-  
-    #projects .container .project-wrapper .row .col-text p {
-      font-size: 1em;
-      letter-spacing: 1px;
-    }
-  
-    #projects .container .project-wrapper .row .col-img img {
-      max-width: 50%;
-    }
-  
-    #contact .container .contact-wrapper p {
-      font-size: 1.5em;
-    }
-  
-    #contact .container .contact-wrapper a {
-      font-size: 20px;
-    }
-  
-    #footer {
-      padding-top: 2em;
-    }
-  
-    #footer img {
-      width: 2rem;
-    }
-  }
-  
-  @media (min-width: 1280px) and (max-width: 1439px) {
-    .btn {
-      font-size: 22px;
-    }
-  
-    .section-title {
-      font-size: 2.2em;
-    }
-  
-    #presentation .container h1 {
-      font-size: 3.5em;
-      line-height: 1.1em;
-      margin-bottom: 40px;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-info {
-      gap: 40px;
-      padding: 0 10em;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-info p {
-      font-size: 1.6em;
-      line-height: 1.3em;
-      letter-spacing: 1px;
-      text-align: justify;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-image .img-fluid {
-      width: 330px;
-    }
-  
-    .title {
-      font-size: 1.4em;
-    }
-  
-    #projects .container .project-wrapper .row .col-text p {
-      font-size: 1.2em;
-      letter-spacing: 1px;
-    }
-  
-    #projects .container .project-wrapper .row .col-img img {
-      max-width: 50%;
-    }
-  
-    #contact .container .contact-wrapper p {
-      font-size: 1.8em;
-    }
-  
-    #contact .container .contact-wrapper a {
-      font-size: 24px;
-    }
-  
-    #footer {
-      padding-top: 4em;
-    }
-  
-    #footer img {
-      width: 2.6rem;
-    }
-  }
-  
-  @media (min-width: 1440px) and (max-width: 1919px) {
-    .btn {
-      font-size: 25px;
-    }
-  
-    .section-title {
-      font-size: 2.5em;
-      margin-bottom: 5rem;
-    }
-  
-    #presentation .container h1 {
-      font-size: 4.2em;
-      line-height: 1.1em;
-      margin-bottom: 40px;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-info {
-      gap: 40px;
-      padding: 0 14em;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-info p {
-      font-size: 1.6em;
-      line-height: 1.3em;
-      letter-spacing: 1px;
-      text-align: justify;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-image .img-fluid {
-      width: 350px;
-    }
-  
-    .title {
-      font-size: 1.9em;
-    }
-  
-    #projects .container .project-wrapper .row .col-text p {
-      font-size: 1.5em;
-      letter-spacing: 1px;
-    }
-  
-    #projects .container .project-wrapper .row .col-img img {
-      max-width: 50%;
-    }
-  
-    #contact .container .contact-wrapper {
-      gap: 4.5rem;
-    }
-  
-    #contact .container .contact-wrapper p {
-      font-size: 2.6em;
-    }
-  
-    #contact .container .contact-wrapper a {
-      font-size: 28px;
-    }
-  
-    #footer {
-      padding-top: 4em;
-    }
-  
-    #footer img {
-      width: 2.9rem;
-    }
-  }
-  
-  @media (min-width: 1920px) {
-    .btn {
-      font-size: 1.2rem;
-    }
-  
-    .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 5rem;
-    }
-  
-    #presentation .container h1 {
-      font-size: 4rem;
-      line-height: 4.5rem;
-      margin-bottom: 4rem;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-info {
-      gap: 4rem;
-      padding: 0 30rem;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-info p {
-      font-size: 1.6rem;
-      line-height: 2rem;
-      letter-spacing: 0.2rem;
-      text-align: justify;
-    }
-  
-    #about .container .about-wrapper .about-wrapper-image .img-fluid {
-      width: 20rem;
-    }
-  
-    .title {
-      font-size: 1.7rem;
-    }
+}
 
-    #projects .container .project-wrapper .row {
-        flex-wrap: nowrap; 
-        gap: 10rem;   
-    }
-
-    #projects .container .project-wrapper .row .col-text p {
-      font-size: 1.4rem;
-      letter-spacing: 0.1rem;
-    }
-  
-    #projects .container .project-wrapper .row .col-img img {
-      max-width: 100rem;
-      margin: 0;
-    }
-  
-    #contact .container .contact-wrapper {
-      gap: 4.5rem;
-    }
-  
-    #contact .container .contact-wrapper p {
-      font-size: 2.6em;
-    }
-  
-    #contact .container .contact-wrapper a {
-      font-size: 28px;
-    }
-  
-    #footer {
-      padding-top: 4em;
-    }
-  
-    #footer img {
-      width: 2.9rem;
-    }
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .btn {
+    font-size: 20px;
   }
+
+  .section-title {
+    font-size: 1.6em;
+  }
+
+  #presentation .container h1 {
+    font-size: 3em;
+    line-height: 1.1em;
+    margin-bottom: 40px;
+  }
+
+  #about .container .about-wrapper .about-wrapper-info {
+    gap: 40px;
+    padding: 0 10em;
+  }
+
+  #about .container .about-wrapper .about-wrapper-info p {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+  #about .container .about-wrapper .about-wrapper-image .img-fluid {
+    width: 300px;
+  }
+
+  .title {
+    font-size: 1.2em;
+  }
+
+  #projects {
+    padding: 3rem 5rem;
+  }
+
+
+  #projects .container-projetos .col {
+    width: 60%;
+    padding: 1rem 2rem;
+  }
+
+  #projects .container-projetos .col p {
+    height: 50%;
+    font-size: 1.1rem;
+    letter-spacing: 0.06rem;
+  }
+
+  #contact .container .contact-wrapper p {
+    font-size: 1.5em;
+  }
+
+  #footer {
+    padding-top: 2em;
+  }
+
+  #footer img {
+    width: 2rem;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .btn {
+    font-size: 22px;
+  }
+
+  .section-title {
+    font-size: 2.2em;
+  }
+
+  #presentation .container h1 {
+    font-size: 3.5em;
+    line-height: 1.1em;
+    margin-bottom: 40px;
+  }
+
+  #about .container .about-wrapper .about-wrapper-info {
+    gap: 40px;
+    padding: 0 10em;
+  }
+
+  #about .container .about-wrapper .about-wrapper-info p {
+    font-size: 1.6em;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+  #about .container .about-wrapper .about-wrapper-image .img-fluid {
+    width: 330px;
+  }
+
+  .title {
+    font-size: 1.4em;
+  }
+
+  #projects {
+    padding: 3rem 5rem;
+  }
+
+  #projects .container-projetos .col h3 {
+    font-size: 1.6rem;
+  }
+
+  #projects .container-projetos .col {
+    width: 60%;
+    padding: 1rem 2rem;
+  }
+
+  #projects .container-projetos .col p {
+    height: 50%;
+    font-size: 1.2rem;
+    letter-spacing: 0.06rem;
+  }
+
+  #contact .container .contact-wrapper p {
+    font-size: 1.8em;
+  }
+
+  #footer {
+    padding-top: 4em;
+  }
+
+  #footer img {
+    width: 2.6rem;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .btn {
+    font-size: 25px;
+  }
+
+  .section-title {
+    font-size: 2.5em;
+    margin-bottom: 5rem;
+  }
+
+  #presentation .container h1 {
+    font-size: 4.2em;
+    line-height: 1.1em;
+    margin-bottom: 40px;
+  }
+
+  #about .container .about-wrapper .about-wrapper-info {
+    gap: 40px;
+    padding: 0 14em;
+  }
+
+  #about .container .about-wrapper .about-wrapper-info p {
+    font-size: 1.6em;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+  #about .container .about-wrapper .about-wrapper-image .img-fluid {
+    width: 350px;
+  }
+
+  .title {
+    font-size: 1.9em;
+  }
+
+  #projects {
+    padding: 3rem 5rem;
+  }
+
+  #projects .container-projetos .col h3 {
+    font-size: 1.4rem;
+  }
+
+  #projects .container-projetos .col {
+    width: 35%;
+    padding: 1rem 2rem;
+  }
+
+  #projects .container-projetos .col p {
+    height: 50%;
+    font-size: 1.3rem;
+    letter-spacing: 0.06rem;
+  }
+
+  #contact .container .contact-wrapper {
+    gap: 4.5rem;
+  }
+
+  #contact .container .contact-wrapper p {
+    font-size: 2.6em;
+  }
+
+  #footer {
+    padding-top: 4em;
+  }
+
+  #footer img {
+    width: 2.9rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .btn {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  #presentation .container h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+
+  #about .container .about-wrapper .about-wrapper-info {
+    gap: 4rem;
+    padding: 0 30rem;
+  }
+
+  #about .container .about-wrapper .about-wrapper-info p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    text-align: justify;
+  }
+
+  #about .container .about-wrapper .about-wrapper-image .img-fluid {
+    width: 20rem;
+  }
+
+  #projects {
+    padding: 3rem 5rem;
+  }
+
+  #projects .container-projetos .col {
+    width: 23%;
+    padding: 1rem 2rem;
+  }
+
+  #projects .container-projetos .col h3 {
+    font-size: 1.6rem;
+  }
+
+  #projects .container-projetos .col p {
+    height: 50%;
+    font-size: 1.1rem;
+    letter-spacing: 0.06rem;
+  }
+
+  #contact .container .contact-wrapper {
+    gap: 4.5rem;
+  }
+
+  #contact .container .contact-wrapper p {
+    font-size: 2.6em;
+  }
+
+  #footer {
+    padding-top: 4em;
+  }
+
+  #footer img {
+    width: 2.9rem;
+  }
+}
