@@ -26,7 +26,11 @@ Durante o desenvolvimento deste projeto, aprofundei habilidades como:
 
 ---
 
-## **Como Visualizar o Projeto**  
+## **Como Visualizar o Projeto**
+1. Acesse [thiagocampello.com.br](thiagocampello.com.br)
+
+   ### OU
+   
 1. Clone este repositório:  
    ```bash
    https://github.com/Campejo/Portfolio-Pessoal.git
