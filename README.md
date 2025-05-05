@@ -33,7 +33,7 @@ Durante o desenvolvimento deste projeto, aprofundei habilidades como:
    
 1. Clone este repositório:  
    ```bash
-   https://github.com/Campejo/Portfolio-Pessoal.git
+   https://github.com/Thiago-Campello/Portfolio-Pessoal.git
    ```
 2. Abra o arquivo `index.html` em qualquer navegador.
 
@@ -46,7 +46,7 @@ Durante o desenvolvimento deste projeto, aprofundei habilidades como:
 ---
 
 ## **Autor**  
-Desenvolvido por [Thiago Campello](https://github.com/Campejo).  
+Desenvolvido por [Thiago Campello](https://github.com/Thiago-Campello).  
 Entre em contato: [campellthiago@gmail.com](mailto:campellthiago@gmail.com).  
 
 ---
